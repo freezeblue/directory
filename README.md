@@ -1,3 +1,7 @@
+## Screenshots
+| Normal | Empty |  Error |
+|------------|-------------|-------------|  
+|<img src="https://github.com/freezeblue/directory/blob/main/screen-normal.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screen-empty.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screen-error.png?raw=true" width="300">|
 
 ## Build tools & versions used
  - Xcode 13.4.1
@@ -143,7 +147,7 @@ Totally 10 Hours.
 ## Did you make any trade-offs for this project? What would you have done differently with more time?
 
  1. HttpService layer is implemented as a simple wrapper of URLSession. If I got more time, I'd like to add request queue and QoS to better support upper layer's future requirements like prioritizing requests, background fetch, retry, limit of concurrent requests, etc.
- 2. The Kingfisher is good at handling remote image, but I would like to do it by my self if I got more time. With my own caching, I could have a unified eviction policy and total cache size control across the app. Also, with the "better" HttpServer layer mention in #1, I could deprioritize imaging downloading requests and save CPU/bandwidth for other more important tasks first.
+ 2. The Kingfisher is good at handling remote image, but I would like to do it by my self if I got more time. With my own caching, I could have a unified eviction policy and total cache size control across the app. Also, with the "better" HttpServer layer mention in #1, I could de-prioritize imaging downloading requests and save CPU/bandwidth for other more important tasks first.
  3. The navigation framework still needs to answer two more key real-life problems
 	 * If a new destination is already in the navigation stack, what should we do? Push a new instance on the top of the stack, or pop the stack to the existing instance of the destination? 
 	 * When popping an existing screen, is dismissing that screen OK? The user might be in the middle of some flow. We'd better provide a mechanism to confirm if current view is admissible.
@@ -165,5 +169,5 @@ The following 3rd-party libraries are imported via Swift Package Manager
 The app randomly chooses one of the three APIs to fetch data. So, keep "pulling to refresh" and you'll see the three scenarios: directory with employees screen, empty directory screen and fetch failure screen.
 
 > PS1: There's a tiny advertisement for myself on the empty directory screen LOL
-
+> 
 > PS2: UI is not my strongest part, so I've done all my best for the looks and feels of the app.
