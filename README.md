@@ -165,4 +165,5 @@ The following 3rd-party libraries are imported via Swift Package Manager
 The app randomly chooses one of the three APIs to fetch data. So, keep "pulling to refresh" and you'll see the three scenarios: directory with employees screen, empty directory screen and fetch failure screen.
 
 > PS1: There's a tiny advertisement for myself on the empty directory screen LOL
+
 > PS2: UI is not my strongest part, so I've done all my best for the looks and feels of the app.
