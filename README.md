@@ -1,7 +1,7 @@
 ## Screenshots
 | Normal | Empty |  Error |
 |------------|-------------|-------------|  
-|<img src="https://github.com/freezeblue/directory/blob/main/screen-normal.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screen-empty.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screen-error.png?raw=true" width="300">|
+|<img src="https://github.com/freezeblue/directory/blob/main/screenshot-normal.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screenshot-empty.png?raw=true" width="300">|<img src="https://github.com/freezeblue/directory/blob/main/screenshot-error.png?raw=true" width="300">|
 
 ## Build tools & versions used
  - Xcode 13.4.1
